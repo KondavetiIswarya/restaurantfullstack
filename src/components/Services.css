@@ -1,0 +1,62 @@
+.services-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 40px;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  color: black; /* Black ink color */
+  animation: fadeIn 1s ease-in; /* Animation for the title */
+  margin-bottom: 30px; /* Spacing below the title */
+}
+
+.services-wrapper {
+  display: flex; /* Display services horizontally */
+  justify-content: space-around; /* Space between the services */
+  width: 100%; /* Full width to utilize space */
+}
+
+.service {
+  background-color: #fff; /* Changed background to white */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%; /* Adjust width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #4CAF50;  /* Optional color, change as needed */
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Slide in from above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

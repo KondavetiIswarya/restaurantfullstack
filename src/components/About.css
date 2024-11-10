@@ -1,0 +1,39 @@
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;  /* Visible gap between the divs */
+}
+
+.about-left, .about-right, .about-center {
+  padding: 20px;  /* Add padding to each section */
+  background-color: #f0f0f0;  /* Optional background color to make divs stand out */
+  border-radius: 8px;  /* Optional rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional shadow for better visibility */
+}
+
+.about-left, .about-right {
+  width: 25%; /* 25% width for the left and right sections */
+}
+
+.about-center {
+  width: 50%; /* 50% width for the center section */
+  text-align: center;
+}
+
+.about-image {
+  width: 100%;      /* Ensure both images take up the full width of their parent div */
+  height: 300px;    /* Set a fixed height to make both images the same size */
+  object-fit: cover; /* This ensures the image maintains aspect ratio and covers the entire area */
+  border: 2px solid #ddd;  /* Optional border to clearly show separation */
+}
+
+.about-center h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-center p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

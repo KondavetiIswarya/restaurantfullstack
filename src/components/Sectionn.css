@@ -1,0 +1,15 @@
+.section-container {
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .slide-in {
+    transform: translateX(0); /* Start position */
+  }
+  
+  .slide-out {
+    transform: translateX(-100%); /* Slide out to the left */
+  }
+  
